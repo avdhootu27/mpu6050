@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>mpu6050</name>
+  <version>0.0.1</version>
+  <description>The mpu6050 package built for Jetson Xavier NX with ROS Noetic</description>
+
+  <maintainer email="avdhootu.27@gmail.com">Avdhoot Ubale</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>sensor_msgs</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+
+  <export>
+   
+  </export>
+</package>
