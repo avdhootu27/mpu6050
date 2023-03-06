@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+
+<launch>
+	<arg name="rvizconfig" default="$(find mpu6050)/config/config.rviz"/>
+	<arg name="model" default="$(find mpu6050)/urdf/mpu.xacro"/>
+	<param name="robot_description" command="$(find xacro)/xacro $(arg model)"/>
+
+	<!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher"/> -->
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+
+	<node name="mpu6050" pkg="mpu6050" type="mpu6050" />
+	<!-- <node name="mpu_broadcaster" pkg="tf" type="static_transform_publisher" args="0.2 0.2 0 0 0 0 base_link mpu6050_frame 100"/> -->
+	<node name="rviz" pkg="rviz" type="rviz" required="true" args="-d $(arg rvizconfig)"/>
+</launch>

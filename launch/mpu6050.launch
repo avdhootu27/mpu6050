@@ -1,4 +1,5 @@
 <?xml version="1.0" ?>
+
 <launch>
-	<node name="mpu6050" pkg="mpu6050" type="mpu6050"/>
+	<node name="mpu6050" pkg="mpu6050" type="mpu6050" />
 </launch>

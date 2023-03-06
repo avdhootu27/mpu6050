@@ -294,7 +294,7 @@ int main(int argc, char **argv) {
 		// Create Imu message and publish
 		imu_data.header.seq = count;
 		imu_data.header.stamp = ros::Time::now();
-		imu_data.header.frame_id = "mpu6050";
+		imu_data.header.frame_id = "mpu6050_frame";
 
 		imu_data.orientation = q_msg;
 		

@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<robot name="mpu" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+	<link name="mpu6050_frame">
+	</link>
+
+</robot>
