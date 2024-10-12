@@ -1,6 +1,6 @@
 # mpu6050-jetson-xavier-nx
 
-This package is specifically designed to get orientation, angular velocity and linear acceleration data in the form of "sensor_msgs/Imu" from mpu6050 imu sensor on Nvidia's Jetson Xavier NX board with ROS.
+This package is specifically designed to get orientation, angular velocity and linear acceleration data in the form of "sensor_msgs/Imu" from mpu6050 imu sensor on Nvidia's Jetson Xavier NX board with ROS Noetic.
 
 ### The parameters assumed in the code :
 * Gravity = 9.81m/s2
